@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>American Eagle - Classic Tees</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="icon" type="img/png" href="img/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header id="siteHeader" aria-label="Main header">
+      <div class="wrap inner">
+        <div class="brand">
+          <a href="#home" aria-label="Homepage"><img class="logo" src="img/logo.png" alt="American Eagle Logo" /></a>
+          <div class="muted" style="font-weight:700">American Eagle</div>
+        </div>
+
+        <nav id="navMenu" role="navigation" aria-label="Primary">
+          <a href="#home">home</a>
+          <a href="#collection">collection</a>
+          <a href="#arrivals">new arrivals</a>
+          <a href="#about">about</a>
+          <a href="#contact" class="cta">contact</a>
+        </nav>
+
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="wrap" id="home">
+      <section class="hero">
+        <div class="text reveal fade-up" style="--delay:120ms">
+          <h1>American Eagle <br/> Classic Tee</h1>
+          <p>اكتشف الراحة والأناقة في أحدث تشكيلة من تيشيرتات American Eagle. قطن ناعم، تصميم عصري، وألوان تناسب كل الأذواق.</p>
+          <a class="shop-btn" href="#collection" role="button">تسوق الآن <i class="fa-solid fa-arrow-right" style="margin-left:8px"></i></a>
+        </div>
+
+        <div class="image reveal zoom" style="--delay:240ms">
+          <img class="mainImg" src="img/white.jpeg" alt="AE T-shirt" loading="lazy" />
+        </div>
+
+        <div class="swatches" aria-hidden="true">
+          <button title="White" aria-label="White tee" onclick="changeShirt('img/white.jpeg','linear-gradient(180deg,#fff,#f6f8fb)')">
+            <img src="img/white.jpeg" alt="" style="width:100%; height:100%; object-fit:cover;">
+          </button>
+          <button title="Blue" aria-label="Blue tee" onclick="changeShirt('img/blue.jpeg','linear-gradient(180deg,#eaf6ff,#dff3ff)')">
+            <img src="img/blue.jpeg" alt="" style="width:100%; height:100%; object-fit:cover;">
+          </button>
+          <button title="Peach" aria-label="Peach tee" onclick="changeShirt('img/peach.jpeg','linear-gradient(180deg,#fff6f4,#fff1ef)')">
+            <img src="img/peach.jpeg" alt="" style="width:100%; height:100%; object-fit:cover;">
+          </button>
+          <button title="Grey" aria-label="Grey tee" onclick="changeShirt('img/gray.jpeg','linear-gradient(180deg,#f3f3f4,#ececec)')">
+            <img src="img/gray.jpeg" alt="" style="width:100%; height:100%; object-fit:cover;">
+          </button>
+          <button title="Red" aria-label="Red tee" onclick="changeShirt('img/red.jpeg','linear-gradient(180deg,#fff0f1,#fff3f4)')">
+            <img src="img/red.jpeg" alt="" style="width:100%; height:100%; object-fit:cover;">
+          </button>
+        </div>
+      </section>
+
+      <!-- Collection -->
+      <section id="collection" aria-labelledby="collectionTitle">
+        <h2 id="collectionTitle" class="reveal fade-up" style="--delay:40ms">our collection</h2>
+
+        <div class="grid">
+          <article class="card reveal slide-right" style="--delay:60ms" aria-label="Classic White Tee">
+            <img src="img/white.jpeg" alt="Classic White Tee" loading="lazy">
+            <h3>Classic White Tee</h3>
+            <p>$29.99</p>
+          </article>
+
+          <article class="card reveal slide-left" style="--delay:120ms" aria-label="Sky Blue Tee">
+            <img src="img/blue.jpeg" alt="Sky Blue Tee" loading="lazy">
+            <h3>Sky Blue Tee</h3>
+            <p>$31.99</p>
+          </article>
+
+          <article class="card reveal slide-right" style="--delay:180ms" aria-label="Peach Comfort Tee">
+            <img src="img/peach.jpeg" alt="Peach Comfort Tee" loading="lazy">
+            <h3>Peach Comfort Tee</h3>
+            <p>$28.99</p>
+          </article>
+
+          <article class="card reveal slide-left" style="--delay:240ms" aria-label="Urban Grey Tee">
+            <img src="img/gray.jpeg" alt="Urban Grey Tee" loading="lazy">
+            <h3>Urban Grey Tee</h3>
+            <p>$27.99</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- New Arrivals -->
+      <section id="arrivals" aria-labelledby="arrivalsTitle">
+        <h2 id="arrivalsTitle" class="reveal fade-up" style="--delay:40ms">new arrivals</h2>
+
+        <div class="grid">
+          <article class="card reveal slide-right" style="--delay:80ms">
+            <img src="img/red.jpeg" alt="Red Spirit Tee" loading="lazy">
+            <h3>Red Spirit Tee</h3>
+            <p>$30.99</p>
+          </article>
+
+          <article class="card reveal slide-left" style="--delay:140ms">
+            <img src="img/blue.jpeg" alt="Ocean Breeze Tee" loading="lazy">
+            <h3>Ocean Breeze Tee</h3>
+            <p>$33.99</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" aria-labelledby="aboutTitle">
+        <h2 id="aboutTitle" class="reveal fade-up" style="--delay:40ms">about us</h2>
+
+        <div class="about">
+          <img class="reveal zoom" style="--delay:120ms" src="img/about.jpeg" alt="about American Eagle" loading="lazy">
+          <div class="about-text reveal fade-up" style="--delay:160ms">
+            <p>
+              نحن في <strong>American Eagle</strong> نؤمن بأن الأناقة الحقيقية تبدأ من الراحة.
+              منذ بدايتنا، نسعى لتقديم أفضل خامات القطن بتصاميم تعبر عن شخصيتك.
+              اكتشف مجموعتنا التي تجمع بين الجودة، الأسلوب، والراحة اليومية.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" aria-labelledby="contactTitle">
+        <h2 id="contactTitle" class="reveal fade-up" style="--delay:40ms">Get In Touch</h2>
+
+        <div class="contact-container">
+          <div class="contact-info reveal slide-right" style="--delay:80ms">
+            <h3>Contact Information</h3>
+            <p class="muted">تواصل معنا لأي استفسار أو تعاون — نرد عليك خلال 24 ساعة.</p>
+            <ul>
+              <li><strong>Email:</strong> <a href="mailto:yourmail@example.com">desha.dvz@gmail.com</a></li>
+              <li><strong>Phone:</strong> +201026505945</li>
+              <li><strong>Address:</strong> Mansourah, Egypt</li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal slide-left" style="--delay:120ms" onsubmit="event.preventDefault(); alert('Form submitted!');" aria-label="Contact form">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Full Name" required aria-required="true" />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email Address" required aria-required="true" />
+            </div>
+            <div class="form-group">
+              <textarea name="message" rows="5" placeholder="Your Message" required aria-required="true"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="wrap center">
+        <h3>Desah4web</h3>
+        <div class="fager">
+          <a href="mailto:desha.dvz@gmail.com" aria-label="Gmail"><i class='bx bxl-gmail'></i></a>
+          <a href="https://wa.me/201026505945" target="_blank" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+          <a href="https://github.com/deshadvz-cmyk" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/mostafa-elsayed-b76876398/" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+        <p style="opacity:0.85; margin-top:12px;">© 2025 All Rights Reserved | Designed by <strong>Desah4web</strong></p>
+      </div>
+    </footer>
+  </div>
+<script src="main.js"></script>
+  <!-- ======= Minimal JS (only for UX triggers: mobile nav, reveal on scroll, header shrink, change shirt) ======= -->
+</body>
+</html>
